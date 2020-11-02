@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Arenas</title>
+  </head>
+  <body>
+    <div class="arenas-container">
+      <span class="title">Select Arena</span>
+      <div id="arenas">
+        <button
+          class="beach"
+          onmouseover="setBackground('beach')"
+          onclick="selectArena('beach')"
+        >
+          beach
+        </button>
+        <button
+          class="planet"
+          onmouseover="setBackground('earth')"
+          onclick="selectArena('earth')"
+        >
+          planet
+        </button>
+        <button
+          class="dojo"
+          onmouseover="setBackground('dojo')"
+          onclick="selectArena('dojo')"
+        >
+          dojo
+        </button>
+        <button
+          class="forest"
+          onmouseover="setBackground('forest')"
+          onclick="selectArena('forest')"
+        >
+          forest
+        </button>
+        <button
+          class="matrix"
+          onmouseover="setBackground('matrix')"
+          onclick="selectArena('matrix')"
+        >
+          matrix
+        </button>
+        <button
+          class="snow"
+          onmouseover="setBackground('snow')"
+          onclick="selectArena('snow')"
+        >
+          snow
+        </button>
+      </div>
+      <div id="select-ninja__container">
+        <select name="player1" id="player1" onchange="selectedNinja('player1')">
+          <option value="0">Select Ninja</option>
+          <option value="donny">Donatello</option>
+          <option value="leo">Leonardo</option>
+          <option value="mikey">Michelangelo</option>
+          <option value="raphael">Raphael</option>
+        </select>
+        <select name="player2" id="player2" onchange="selectedNinja('player2')">
+          <option value="0">Select Ninja</option>
+          <option value="donny">Donatello</option>
+          <option value="leo">Leonardo</option>
+          <option value="mikey">Michelangelo</option>
+          <option value="raphael">Raphael</option>
+        </select>
+      </div>
+    </div>
+    <div class="selected-ninjas-images__container">
+      <img src="" alt="" id="selectedNinja1" />
+      <img src="" alt="" id="selectedNinja2" />
+    </div>
+  </body>
+
+  <script src="src/script.js"></script>
+</html>
